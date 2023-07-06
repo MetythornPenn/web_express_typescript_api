@@ -3,3 +3,5 @@ rest-api.snipd.io {
         header_down Strict-Transport-Security max-age=31536000;
     }
 }
+
+

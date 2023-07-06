@@ -16,11 +16,19 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-    - $PWD/Caddyfile:/etc/caddy/Caddyfile
-    - $PWD/site:/srv
-    - caddy_data:/data
-    - caddy_config:/config
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - $PWD/site:/srv
+      - caddy_data:/data
+      - caddy_config:/config
+
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb-service
+    restart: unless-stopped
+    volumes:
+      - mongodb_data:/data/db
 
 volumes:
   caddy_data:
   caddy_config:
+  mongodb_data:
