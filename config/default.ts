@@ -1,0 +1,34 @@
+export default {
+  port: 1337,
+  dbUri: "mongodb://localhost:27017/rest-api-tutorial",
+  saltWorkFactor: 10,
+  accessTokenTtl: "15m",
+  refreshTokenTtl: "1y",
+  accessTokenPrivateKey: `
+  -----BEGIN RSA PRIVATE KEY-----
+MIICWgIBAAKBgGWg/lWcNjbZT+MIznb0j/i9qQkacSRqiDKtVYyzyFucL4uE5+PO
+GZDQzFF7/HD+i8aGnxRW5ctfJUP65QMLvGvcgFvfgeX25hvXUzKMI5TSLjKW34yG
+GdAotVB1XcR7YqWWyLiis1CZVF8c6MJQeV4LqIfOXPn+3x/FG5ZBZJiPAgMBAAEC
+gYA408sjx9Ow29cF1pjMf3g52KO6iWSWvlMmMzJRGP6B61XSqCCai1ZUWczGC5Rf
+ApbaDdDKKMUZ8Tv/RT3ldByJZYTf3rUNmqfIygFqK8Cxt8e3nxMRTxyVrOLihNVF
+OxdFCoZiiQ1B5WtTygJ/RNtYO3HPKcLl2ehs/WRmE1HSwQJBALlNFuHs7XhOUM7j
+K/Vf3c8MjQ0vPB/FtCw8VV9eMAHVyZrcWKQlmIAhjxGOeKF2ogD+h7GrwiN6saZt
+C5cTaXECQQCMZ2MzK5FC07wZUFK5uqpAv+8eybKXGpVGz6LiwJiQ4RCPcEXJqK1y
+iapFH3V1/RiuZVqqGPWZNRMOCDNYZyH/AkBVYTza6qVcmpFHUostq3dzcHAJlCsa
+5Kio/T/FCowKPGyBS2gYci47U7stNr1EgHoTBTSW2/I/EMiMS5BckxgxAkAi5IK7
+scUc5X/mjpawf5pWExz6+sc+VCXq/ikNzy1bPAOgkhdV4WyRfXLqUMIhO3AJzzhz
+81X96Dm/D/yqqJ7DAkBKNWpbbxwXTMiz6NRW05ta1bL9b9uPKlFUZiStwp0QWYST
+CejJNXRDWcdSqZu18PS41XVdpEpvjyeuhcrBOAU7
+-----END RSA PRIVATE KEY-----
+  `,
+  accessTokenPublicKey: `
+  -----BEGIN PUBLIC KEY-----
+MIGeMA0GCSqGSIb3DQEBAQUAA4GMADCBiAKBgGWg/lWcNjbZT+MIznb0j/i9qQka
+cSRqiDKtVYyzyFucL4uE5+POGZDQzFF7/HD+i8aGnxRW5ctfJUP65QMLvGvcgFvf
+geX25hvXUzKMI5TSLjKW34yGGdAotVB1XcR7YqWWyLiis1CZVF8c6MJQeV4LqIfO
+XPn+3x/FG5ZBZJiPAgMBAAE=
+-----END PUBLIC KEY-----
+  `,
+  refreshTokenPrivateKey: ``,
+  refreshTokenPublicKey: ``,
+};
